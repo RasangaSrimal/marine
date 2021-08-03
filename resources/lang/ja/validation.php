@@ -1,0 +1,260 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | バリデーション言語行
+    |--------------------------------------------------------------------------
+    |
+    | 以下の言語行はバリデタークラスにより使用されるデフォルトのエラー
+    | メッセージです。サイズルールのようにいくつかのバリデーションを
+    | 持っているものもあります。メッセージはご自由に調整してください。
+    |
+     */
+
+    'accepted'             => ':attributeを承認してください。',
+    'active_url'           => ':attributeが有効なURLではありません。',
+    'after'                => ':attributeには、:dateより後の日付を指定してください。',
+    'after_or_equal'       => ':attributeには、:date以降の日付を指定してください。',
+    'alpha'                => ':attributeはアルファベットのみがご利用できます。',
+    'alpha_dash'           => ':attributeはアルファベットとダッシュ(-)及び下線(_)がご利用できます。',
+    'alpha_num'            => ':attributeはアルファベット数字がご利用できます。',
+    'array'                => ':attributeは配列でなくてはなりません。',
+    'before'               => ':attributeには、:dateより前の日付をご利用ください。',
+    'before_or_equal'      => ':attributeには、:date以前の日付をご利用ください。',
+    'between'              => [
+        'numeric' => ':attributeは、:minから:maxの間で指定してください。',
+        'file'    => ':attributeは、:min kBから、:max kBの間で指定してください。',
+        'string'  => ':attributeは、:min文字から、:max文字の間で指定してください。',
+        'array'   => ':attributeは、:min個から:max個の間で指定してください。',
+    ],
+    'boolean'              => ':attributeは、trueかfalseを指定してください。',
+    'confirmed'            => ':attributeと、確認フィールドとが、一致していません。',
+    'date'                 => ':attributeには有効な日付を指定してください。',
+    'date_equals'          => ':attributeには、:dateと同じ日付けを指定してください。',
+    'date_format'          => ':attributeは:format形式で指定してください。',
+    'different'            => ':attributeと:otherには、異なった内容を指定してください。',
+    'digits'               => ':attributeは:digits桁で指定してください。',
+    'digits_between'       => ':attributeは:min桁から:max桁の間で指定してください。',
+    'dimensions'           => ':attributeの図形サイズが正しくありません。',
+    'distinct'             => ':attributeには異なった値を指定してください。',
+    'email'                => ':attributeには、有効なメールアドレスを指定してください。',
+    'ends_with'            => ':attributeには、:valuesのどれかで終わる値を指定してください。',
+    'exists'               => '選択された:attributeは正しくありません。',
+    'file'                 => ':attributeにはファイルを指定してください。',
+    'filled'               => ':attributeに値を指定してください。',
+    'gt'                   => [
+        'numeric' => ':attributeには、:valueより大きな値を指定してください。',
+        'file'    => ':attributeには、:value kBより大きなファイルを指定してください。',
+        'string'  => ':attributeは、:value文字より長く指定してください。',
+        'array'   => ':attributeには、:value個より多くのアイテムを指定してください。',
+    ],
+    'gte'                  => [
+        'numeric' => ':attributeには、:value以上の値を指定してください。',
+        'file'    => ':attributeには、:value kB以上のファイルを指定してください。',
+        'string'  => ':attributeは、:value文字以上で指定してください。',
+        'array'   => ':attributeには、:value個以上のアイテムを指定してください。',
+    ],
+    'image'                => ':attributeには画像ファイルを指定してください。',
+    'in'                   => '選択された:attributeは正しくありません。',
+    'in_array'             => ':attributeには:otherの値を指定してください。',
+    'integer'              => ':attributeは整数で指定してください。',
+    'ip'                   => ':attributeには、有効なIPアドレスを指定してください。',
+    'ipv4'                 => ':attributeには、有効なIPv4アドレスを指定してください。',
+    'ipv6'                 => ':attributeには、有効なIPv6アドレスを指定してください。',
+    'json'                 => ':attributeには、有効なJSON文字列を指定してください。',
+    'lt'                   => [
+        'numeric' => ':attributeには、:valueより小さな値を指定してください。',
+        'file'    => ':attributeには、:value kBより小さなファイルを指定してください。',
+        'string'  => ':attributeは、:value文字より短く指定してください。',
+        'array'   => ':attributeには、:value個より少ないアイテムを指定してください。',
+    ],
+    'lte'                  => [
+        'numeric' => ':attributeには、:value以下の値を指定してください。',
+        'file'    => ':attributeには、:value kB以下のファイルを指定してください。',
+        'string'  => ':attributeは、:value文字以下で指定してください。',
+        'array'   => ':attributeには、:value個以下のアイテムを指定してください。',
+    ],
+    'max'                  => [
+        'numeric' => ':attributeには、:max以下の数字を指定してください。',
+        'file'    => ':attributeには、:max kB以下のファイルを指定してください。',
+        'string'  => ':attributeは、:max文字以下で指定してください。',
+        'array'   => ':attributeは:max個以下指定してください。',
+    ],
+    'mimes'                => ':attributeには:valuesタイプのファイルを指定してください。',
+    'mimetypes'            => ':attributeには:valuesタイプのファイルを指定してください。',
+    'min'                  => [
+        'numeric' => ':attributeには、:min以上の数字を指定してください。',
+        'file'    => ':attributeには、:min kB以上のファイルを指定してください。',
+        'string'  => ':attributeは、:min文字以上で指定してください。',
+        'array'   => ':attributeは:min個以上指定してください。',
+    ],
+    'not_in'               => '選択された:attributeは正しくありません。',
+    'not_regex'            => ':attributeの形式が正しくありません。',
+    'numeric'              => ':attributeには、数字を指定してください。',
+    'present'              => ':attributeが存在していません。',
+    'regex'                => ':attributeに正しい形式を指定してください。',
+    'required'             => ':attributeは必ず指定してください。',
+    'required_if'          => ':otherが:valueの場合、:attributeも指定してください。',
+    'required_unless'      => ':otherが:valuesでない場合、:attributeを指定してください。',
+    'required_with'        => ':valuesを指定する場合は、:attributeも指定してください。',
+    'required_with_all'    => ':valuesを指定する場合は、:attributeも指定してください。',
+    'required_without'     => ':valuesを指定しない場合は、:attributeを指定してください。',
+    'required_without_all' => ':valuesのどれも指定しない場合は、:attributeを指定してください。',
+    'same'                 => ':attributeと:otherには同じ値を指定してください。',
+    'size'                 => [
+        'numeric' => ':attributeは:sizeを指定してください。',
+        'file'    => ':attributeのファイルは、:sizeキロバイトでなくてはなりません。',
+        'string'  => ':attributeは:size文字で指定してください。',
+        'array'   => ':attributeは:size個指定してください。',
+    ],
+    'starts_with'          => ':attributeには、:valuesのどれかで始まる値を指定してください。',
+    'string'               => ':attributeは文字列を指定してください。',
+    'timezone'             => ':attributeには、有効なゾーンを指定してください。',
+    'unique'               => ':attributeの値は既に存在しています。',
+    'uploaded'             => ':attributeのアップロードに失敗しました。',
+    'url'                  => ':attributeに正しい形式を指定してください。',
+    'uuid'                 => ':attributeに有効なUUIDを指定してください。',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom バリデーション言語行
+    |--------------------------------------------------------------------------
+    |
+    | "属性.ルール"の規約でキーを指定することでカスタムバリデーション
+    | メッセージを定義できます。指定した属性ルールに対する特定の
+    | カスタム言語行を手早く指定できます。
+    |
+     */
+
+    'custom' => [
+        '属性名' => [
+            'ルール名' => 'カスタムメッセージ',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | カスタムバリデーション属性名
+    |--------------------------------------------------------------------------
+    |
+    | 以下の言語行は、例えば"email"の代わりに「メールアドレス」のように、
+    | 読み手にフレンドリーな表現でプレースホルダーを置き換えるために指定する
+    | 言語行です。これはメッセージをよりきれいに表示するために役に立ちます。
+    |
+     */
+
+    'attributes' => [
+        'user_code' => 'ユーザコード',
+        'kana' => 'フリガナ',
+        'name' => '氏名',
+        'ship' => '氏名',
+        'company' => '会社名',
+        'sales_in_charge' => '担当セールス',
+        'job_title' => '役職名',
+        'user_postal_code' => '郵便番号',
+        'user_address1' => '住所1',
+        'user_address2' => '住所2',
+        'home_tel' => '自宅TEL',
+        'mobile_tel' => '携帯TEL',
+        'company_postal_code' => '郵便番号',
+        'company_address1' => '住所1',
+        'company_address2' => '住所2',
+        'company_tel' => '会社TEL',
+        'dm_issuance_cla' => 'DM発行区分',
+        'registered_date' => '登録日時',
+        'inspection_num' => '船舶検査番号',
+        'gross_register_tonn' => '総トン数',
+        'owner' => '所有者',
+        'registration_port' => '船籍港',
+        'length' => '船舶の長さ',
+        'borrower' => '借入人',
+        'passengers_max_num' => '旅客',
+        'sailors_max_num' => '船員',
+        'other_passengers_max_num' => 'その他の乗船者',
+        'total_passengers_num' => '計',
+        'delivery_date' => '交付日',
+        'owner_postal_code' => '郵便番号',
+        'borrower_postal_code' => '郵便番号',
+        'owner_address1' => '住所1',
+        'owner_address2' => '住所2',
+        'borrower_address1' => '住所1',
+        'borrower_address2' => '住所2',
+        'owner_tel' => 'TEL',
+        'borrower_tel' => 'TEL',
+        'inspection_id' => '船舶検査ID',
+        'other_navigational_conditions' => 'その他の航行 上の条件',
+        'cost_rate' => '原価率',
+        'order' => '順番',
+        "code" => "コード",
+        "key" => "キー",
+        'store_name' => 'サービス店名',
+        'sales_company_name' => "販売会社名",
+        'sales_in_charge_name' => '担当サービス名',
+        'service_name' => '担当サービス名',
+        'model_selection' => "機種選択",
+        'model' => "機種",
+        'classification' => "区分",
+        'storage_code' => "保管コード",
+        'storage_location' => "保管場所",
+        'type_code' => "種別コート",
+        'type_classification_contents' => "種別区分内容",
+        'sales_details' => "壳上内容",
+        'expense_detail' => "諸經費内容",
+        'order' =>"順番",
+        'payment_terms' => "支払い条件例",
+        'delivery_place' => "受渡場所語句",
+        'role_name' => "役生名",
+        'code' => "コード",
+        'area_name' => "区域名",
+        'ship_type' => "船種",
+        'usage_name' => "用途名",
+        'boat_type_selection' => "艇種選択", 
+        'extracted_data' => "抽出データ", 
+        'boat_type_name' => "艇種名", 
+        'product_code' => "商品コード", 
+        'bu_classification' => "BU区分", 
+        'class' => "クラス",
+        'customer_id' => "顧客ID",
+        'estimate_num' => "見茜No.",
+        'estimate_date' => "見積 年月日",
+        'estimated_amount' => "御見積総金額",
+        'estimated_subject' => "件 名",
+        'expiration_date' => "見若有勃期限",
+        'hull_num' => "庭番",
+        'customer_name' => "顧客氏名",
+        'ship_name' => "船名",
+        'boat_type' => "程程",
+        'engine_num_r' => "機番 R",
+        'engine_num_l' => "機番 L",
+        'inspection_date' => "船舶後查日",
+        'location' => "保管場所",
+        'sales_date' => "売上日",
+        'current_rate' => "現消費税",
+        'tax_rate' => "新消費税",
+        'date' => "消費税改正日",
+        'file_no' => "ファイルNO",
+        'ship_model' => "機種",
+        'machine_num' => "機番",
+        'boat_no' => "艇 No",
+        'created_date' => "受付日",
+        'usage_time' => "使用時間",
+        'due_date' => "納入日",
+        'request_details' => "依頼内容",
+        'current_password' => "以前のパスワード",
+        'new_password' => "新しいパスワード",
+        'new_confirm_password' => "パスワードを認証する",
+        'store_name1' => "店名1",
+        'store_name2' => "店名2",
+        'store_code' => "店コード",
+        'postal_code' => "〒",
+        'address' => "住所1",
+        'bank_name' => "銀行名",
+        'tell' => "TEL",
+        'fax' => "FAX",
+        'account_name' => "口座名",
+        'account_number' => "口座番号",
+        'customer.name' => "氏名",
+    ],
+];

@@ -1,0 +1,6 @@
+./artisan migrate:reset --pretend > migrate.sql
+./artisan migrate:reset
+./artisan migrate --pretend >> migrate.sql
+./artisan migrate
+cat postal_codes.sql|docker exec -i XXXXXXX_db_1 mysql laravel -pXXXXX
+cat database/data/master_data.sql|docker exec -i XXXXXXX_db_1 mysql laravel -pXXXXX

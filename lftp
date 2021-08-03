@@ -1,0 +1,11 @@
+mirror -R public/assets/ assets/
+mirror -R public/css/ css/
+mirror -R public/js/ js/
+mirror -R vendor/ vendor/
+mirror -R bootstrap/ bootstrap/
+mput -O . public/*.*
+put .env.live -o .env
+put public/index.php.live -o index.php
+mrm storage/framework/views/*.php
+mrm bootstrap/cache/*.*
+put ./vendor/composer/autoload_static.php -o ./vendor/composer/autoload_static.php

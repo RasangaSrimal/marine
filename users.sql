@@ -1,0 +1,1 @@
+INSERT INTO `users` VALUES (1,'activeonline_marineosaka','marineosaka@activeonline.co.jp',NULL,'$2y$10$/CZ2DPrGvCj4qroEEcc6L.r00sKLNoe0KqeHCffZvLkplxdxdqj9i',NULL,'2020-11-02 22:36:08','2020-11-02 22:36:08');

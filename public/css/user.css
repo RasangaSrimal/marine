@@ -1,0 +1,68 @@
+#id_scroll_sidebar {
+    position: static;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+.code_group {
+  margin-bottom: 60px;
+}
+
+.code_group .form-control {
+  border: 0;
+  border-bottom: 1px solid #a1a7ac;
+  border-radius: 0;
+  display: inline-block;
+  width: 30px;
+  font-size: 30px;
+  padding: 0;
+  margin-right: 7px;
+  text-align: center;
+  line-height: 1;
+}
+
+.form-code,
+.product_select {
+  border-radius: 3px;
+  border: 1px solid #d8e1e7;
+  padding: 0 20px;
+  height: auto;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  background-color: #a1a7ac;
+}
+
+.card-header {
+  background-color: #DCDCDC;
+}
+
+.card-footer {
+  background-color: #DCDCDC;
+}
+#map {
+  width: 100%;
+  height: 500px;
+}
+.header-background {
+  background-color: rgb(112, 128, 144);
+}
+
+.invalid-feedback {
+    display: block !important;
+}
+
+.bootstrap-datetimepicker-widget {
+    width: 200px;
+}
+.datepicker table {
+    width: 100%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
