@@ -30,32 +30,69 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        $salesInCharge = SalesInCharge::firstOrFail();
-        $expenseDetail = ExpenseDetail::firstOrFail();
-        $serviceStore = OutsourcedServiceStore::firstOrFail();
-        $serviceInCharge = ServiceInCharge::firstOrFail();
-        $jobTitle = JobTitle::firstOrFail();
-        $shipTipe = ShipType::firstOrFail();
-        $useShip = UseShip::firstOrFail();
-        $navigationArea = NavigationArea::firstOrFail();
-        $deliveryDate = EstimatedDeliveryDate::firstOrFail();
-        $deliveryPlace = EstimatedDeliveryPlace::firstOrFail();
-        $paymentTerms = EstimatedPaymentTerms::firstOrFail();
-        $boatTypeMaster = BoatTypeMaster::firstOrFail();
+        $salesInCharge = SalesInCharge::create([
+            'name' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $expenseDetail = ExpenseDetail::create([
+            'expense_detail' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $serviceStore = OutsourcedServiceStore::create([
+            'code' => str_random(5),
+            'name' => str_random(5),
+            'cost_rate' => mt_rand(0, 10),
+            'order' => mt_rand(0, 10),
+        ]);
+        $serviceInCharge = ServiceInCharge::create([
+            'name' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $jobTitle = JobTitle::create([
+            'role_name' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $shipTipe = ShipType::create([
+            'ship_type' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $useShip = UseShip::create([
+            'usage_name' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $navigationArea = NavigationArea::create([
+            'area_name' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $deliveryDate = EstimatedDeliveryDate::create([
+            'delivery_date' => Carbon::today()->toDateString(),
+            'order' => mt_rand(0, 10),
+        ]);
+        $deliveryPlace = EstimatedDeliveryPlace::create([
+            'delivery_place' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $paymentTerms = EstimatedPaymentTerms::create([
+            'payment_terms' => str_random(5),
+            'order' => mt_rand(0, 10),
+        ]);
+        $boatTypeMaster = BoatTypeMaster::create([
+            'boat_type_selection' => str_random(5),
+            'extracted_data' => Carbon::today()->toDateString(),
+            'name' => str_random(5),
+            'product_code' => str_random(5),
+            'bu_classification' => str_random(5),
+            'class' => str_random(5),
+        ]);
         $customer =  Customer::create([
             'name' => '山田太郎',
             'kana' => str_random(5),
-            'company' => '丸丸証券株式会社',
             'user_code' => str_random(5),
-            'user_postal_code' => '562-0014',
-            'user_address1' => '大阪府箕面市萱野',
-            'user_address2' => '1丁目２−３',
+            'postal_code' => '562-0014',
+            'address1' => '大阪府箕面市萱野',
+            'address2' => '1丁目２−３',
             'home_tel' => '06-6875-0662',
-            'mobile_tel' => '090-7319-5632',
-            'company_postal_code' => str_random(5),
-            'company_address1' => str_random(5),
-            'company_address2' => str_random(5),
-            'company_tel' => str_random(5),
+            'tel' => '090-7319-5632',
             'dm_issuance_cla' => str_random(5),
             'registered_date' => Carbon::today()->toDateString(),
             'sales_in_charge_id' => $salesInCharge->id,
@@ -71,7 +108,6 @@ class DatabaseSeeder extends Seeder
             'inspection_date3' => Carbon::today()->toDateString(),
             'inspection_date4' => Carbon::today()->toDateString(),
             'inspection_date5' => Carbon::today()->toDateString(),
-            'borrower' => str_random(5),
             'delivery_date' => Carbon::today()->toDateString(),
             'gross_register_tonn' => mt_rand(0, 10),
             'model' => 'MSD-3435',
@@ -82,10 +118,6 @@ class DatabaseSeeder extends Seeder
             'passengers_max_num' => mt_rand(0, 10),
             'other_passengers_max_num' => mt_rand(0, 10),
             'sailors_max_num' => mt_rand(0, 10),
-            'borrower_postal_code' => str_random(5),
-            'borrower_address1' => str_random(5),
-            'borrower_address2' => str_random(5),
-            'borrower_tel' => str_random(5),
             'registered_date' => Carbon::today()->toDateString(),
             'inspection_id' => str_random(5),
             'other_navigational_conditions' => str_random(5),

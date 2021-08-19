@@ -13,8 +13,6 @@ class CustomerTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        $this->company = $this->createCompany();
-        $this->customer = $this->createCustomer(['company_id' => $this->company->id]);
         $this->ship = $this->createShip();
         $this->customer->ships()->attach($this->ship);
         $this->url = '/customer';
